@@ -107,11 +107,33 @@ function fizzBuzz(numeros) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(frase) {
+  let copia = frase;
+  
+  for(let i = 0; i < copia.length; i++)
+  {
+    copia=copia.replace(/a/i, '1');
+    copia=copia.replace(/e/i, '2');
+    copia=copia.replace(/i/i, '3');
+    copia=copia.replace(/o/i, '4');
+    copia=copia.replace(/u/i, '5');
+  }
+
+  return copia;
 }
-function decode() {
-  // seu código aqui
+function decode(frase) {
+  let copia = frase;
+  
+  for(let i = 0; i < copia.length; i++)
+  {
+    copia=copia.replace(/1/i, 'a');
+    copia=copia.replace(/2/i, 'e');
+    copia=copia.replace(/3/i, 'i');
+    copia=copia.replace(/4/i, 'o');
+    copia=copia.replace(/5/i, 'u');
+  }
+
+  return copia;
 }
 
 module.exports = {
