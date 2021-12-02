@@ -18,13 +18,13 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(palavra) {
   // seu código aqui
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(vet) {
+  return vet[vet.length-1]+", "+vet[0];
 }
 
 // Desafio 5
