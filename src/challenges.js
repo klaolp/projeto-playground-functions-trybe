@@ -13,7 +13,7 @@ function compareTrue(valor1, valor2) {
 // Desafio 2
 function calcArea(base, height) {
   let area;
-  area = (base*height)/2;
+  area = (base * height) / 2;
   return area;
 }
 
@@ -57,13 +57,13 @@ function highestCount(numeros) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  if((mouse-cat1) === (cat2-mouse))
+  if((mouse - cat1) === (cat2 - mouse))
   {
     return "os gatos trombam e o rato foge";
   }
   else
   {
-    if(cat1 <cat2)
+    if(cat1 < cat2)
     {
       return "cat1";
     }
@@ -75,8 +75,35 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numeros) {
+  let vet = [];
+
+  for(let i = 0; i < numeros.length; i++)
+  {
+    if((numeros[i]%3 == 0) && (numeros[i]%5 == 0))
+    {
+      vet.push("fizzBuzz");
+    }
+    else
+    {
+      if(numeros[i]%3 == 0)
+      {
+        vet.push("fizz");
+      }
+      else
+      {
+        if(numeros[i]%5 == 0)
+        {
+          vet.push("buzz");
+        }
+        else
+        {
+          vet.push("bug!")
+        }
+      }
+    }
+  }
+  return vet;
 }
 
 // Desafio 9
