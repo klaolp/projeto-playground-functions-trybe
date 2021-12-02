@@ -19,7 +19,11 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(palavra) {
-  // seu código aqui
+  let vet = [];
+  vet = palavra;
+
+  vet = vet.split(" ");
+  return vet;
 }
 
 // Desafio 4
